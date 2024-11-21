@@ -12,7 +12,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="316.0" prefWidth="686.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.magame.GameFrameController">
+<BorderPane fx:id="bPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="316.0" prefWidth="686.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.magame.GameFrameController">
    <left>
       <AnchorPane fx:id="puppy" prefWidth="100.0" style="-fx-background-color: #e28743;" BorderPane.alignment="CENTER">
          <BorderPane.margin>
@@ -151,7 +151,7 @@
             <Insets bottom="5.0" left="5.0" right="5.0" />
          </BorderPane.margin>
          <children>
-            <Button layoutX="568.0" layoutY="29.0" mnemonicParsing="false" onAction="#resetMethod" text="Reset" />
+            <Button fx:id="resetButton" layoutX="568.0" layoutY="29.0" mnemonicParsing="false" onAction="#resetMethod" text="Reset" />
             <Label fx:id="displayLives" layoutX="89.0" layoutY="35.0" textAlignment="CENTER">
                <font>
                   <Font name="System Bold" size="14.0" />

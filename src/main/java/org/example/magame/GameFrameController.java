@@ -3,12 +3,10 @@ package org.example.magame;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
-import javafx.scene.control.Alert;
-import javafx.scene.control.ButtonType;
-import javafx.scene.control.ContentDisplay;
-import javafx.scene.control.Label;
+import javafx.scene.control.*;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.AnchorPane;
+import javafx.scene.layout.BorderPane;
 
 import java.net.URL;
 import java.util.*;
@@ -29,6 +27,8 @@ public class GameFrameController implements Initializable {
     private int lives = 3;
     //if we get to the end of the road then we win.
     private int winCount = 0;
+    @FXML
+    private Button resetButton;
 
     private ImageView paw = createImageView( "/images/paw.jpg");
     private ImageView thorns = createImageView("/images/thorn.jpg");
@@ -86,7 +86,7 @@ public class GameFrameController implements Initializable {
 
     @FXML
     void resetMethod(ActionEvent event) {
-        //make images invisibles
+        //make images invisible
         temp.forEach( imageView -> imageView.setVisible(false));
         //set lives back to 3
         lives = 3;

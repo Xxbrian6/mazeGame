@@ -6,6 +6,7 @@ module org.example.magame {
     requires com.dlsc.formsfx;
     requires org.kordamp.bootstrapfx.core;
     requires com.almasb.fxgl.all;
+    requires java.desktop;
 
     opens org.example.magame to javafx.fxml;
     exports org.example.magame;
