@@ -131,10 +131,9 @@ public class GameFrameController implements Initializable {
         }else if (imageType != null && imageType.equals("paw")){
             winCount++;
         }
-
         if (lives == 0) {
             alert.setTitle("Game Over!!");
-            alert.setHeaderText("You suck, Try again.");
+            alert.setHeaderText("You suck, Try again!!.\uD83D\uDC15 \uD83D\uDCA9 \uD83D\uDCA9 \uD83D\uDCA9 \uD83D\uDCA9" );
             setDisplayLives(lives);
             disableLabels();
             alert.showAndWait();
